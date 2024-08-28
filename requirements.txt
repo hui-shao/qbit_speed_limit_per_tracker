@@ -1,0 +1,5 @@
+colorama>=0.4.6
+qbittorrent_api>=2024.3.60
+tldextract>=5.1.2
+toml>=0.10.2
+tqdm>=4.66.1

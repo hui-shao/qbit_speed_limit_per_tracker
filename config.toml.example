@@ -1,0 +1,25 @@
+# 登录信息
+# 请在下方填写您的账号凭据
+[login]
+host = "localhost"  # qbit webui 的 URL
+port = 8080  # qbit webui 的 端口
+username = "qbadmin"  # qbit webui 的 用户名
+password = "qbadmin"  # qbit webui 的 密码
+
+# 限速配置 单位：MB/S
+# 如果一个种子有多个 tracker，会取最小值进行限速
+# 注意填写顶级域名（只包含一个点）
+[upload_limit]
+"xxx.me" = 115.6
+"yyy.info" = 115.6
+"zzz.org" = 95.5
+"www.im" = 95.5
+"uuu.org" = 95.5
+"aaa.cc" = 95.5
+"bbb.io" = 95.5
+"ccc.me" = 45.0
+"ddd.in" = 45.0
+"eee.top" = 45.0
+"fff.com" = 45.0
+"ggg.org" = 22.5
+"hhh.com" = 20.5

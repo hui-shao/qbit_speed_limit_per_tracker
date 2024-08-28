@@ -1,3 +1,4 @@
+import os
 import sys
 import time
 import traceback
@@ -89,6 +90,7 @@ def set_limit(torrent) -> None:
 
 
 if __name__ == '__main__':
+    os.chdir(sys.path[0])
     host, port, username, passwd, limit_info = read_config()
     qbt_client = qb_login(host, port, username, passwd)
     Avalon.info(f"qBittorrent: {qbt_client.app.version}")

@@ -1,4 +1,4 @@
-## Useage
+## Usage
 
 1. Clone this repo.
 2. Install the dependencies by this command: `pip install -r requirements.txt`
@@ -7,3 +7,6 @@
 5. Execute `python main.py` and enjoy.
 
 You can add this to your "crontab" to periodically check and set rate limits!
+
+## Screenshot
+![](./docs/2024-08-30_114526.png)

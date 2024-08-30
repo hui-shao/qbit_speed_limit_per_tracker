@@ -87,6 +87,7 @@ def set_limit(torrent) -> None:
     if torrent.upload_limit == 0 or target_limit_conv != torrent.upload_limit:
         torrent.set_upload_limit(target_limit_conv)
         Avalon.info(f"已限制 {torrent.name} | {torrent.hash[-12:]} | {trackers[0]} | 上传为 {target_limit} MB/s.")
+        time.sleep(0.01)
 
 
 if __name__ == '__main__':
@@ -100,7 +101,6 @@ if __name__ == '__main__':
     Avalon.info(f"读取到的种子数为：{len(torrents)}, 开始处理...")
     for torrent in tqdm(torrents):
         set_limit(torrent)
-        time.sleep(0.01)
 
     Avalon.info("执行完毕", front="\n")
     qbt_client.auth_log_out()

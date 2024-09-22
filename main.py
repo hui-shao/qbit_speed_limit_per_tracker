@@ -86,7 +86,8 @@ def set_limit(torrent) -> None:
     target_limit_conv = int(target_limit * 1024 * 1024)  # MB/s to Byte/s
     if torrent.upload_limit == 0 or target_limit_conv != torrent.upload_limit:
         torrent.set_upload_limit(target_limit_conv)
-        Avalon.info(f"已限制 {torrent.name} | {torrent.hash[-12:]} | {trackers[0]} | 上传为 {target_limit} MB/s.")
+        Avalon.info(f"已限制 {torrent.name} | {torrent.hash[-12:]} | {trackers[0]} | 上传为 {target_limit} MB/s.",
+                    front="\n")
         time.sleep(0.01)
 
 

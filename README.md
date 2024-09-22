@@ -9,4 +9,4 @@
 You can add this to your "crontab" to periodically check and set rate limits!
 
 ## Screenshot
-![](./docs/2024-08-30_114526.png)
+![](./docs/2024-09-22_205147.png)
